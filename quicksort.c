@@ -24,7 +24,6 @@ void quicksort_num(int number[], int first, int last){
 				number[j] = temp;
 			}
 		}
-		if(i == j)return;
 		
 		temp = number[pivot];
 		number[pivot] = number[j];
@@ -57,7 +56,6 @@ void quicksort_string(char number[][101], int first, int last){
 				strcpy(number[j], temp);
 			}
 		}
-		if(i == j)return;
 
 		strcpy(temp, number[pivot]);
 		strcpy(number[pivot], number[j]);
